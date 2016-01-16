@@ -50,4 +50,4 @@ appScript = Concat(appScript, {
   outputFile: '/app.js',
 });
 
-module.exports = new Merge(['public', styles, appScript, vendorScripts]);
+module.exports = new Merge(['public', styles, appScript, vendorScripts], {overwrite: true});
